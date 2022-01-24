@@ -1,0 +1,18 @@
+<template>
+  <p>hello times: {{ helloTimes }}</p>
+</template>
+
+<script lang="ts">
+import Kdu from 'kdu'
+import Component from '../../../lib/index'
+
+@Component
+export default class Hello extends Kdu {
+  helloTimes: number = 0
+
+  sayHello () {
+    this.helloTimes++
+  }
+}
+</script>
+
